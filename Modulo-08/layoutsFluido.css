@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, helvetica, sans-serif;
+}
+
+body {
+    height: 100vw;
+    background-color: #fefefefe;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+div {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.width-100 {
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+    padding: 20px 0;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+article {
+    width: 80%;
+    float: left;
+}

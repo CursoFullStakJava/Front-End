@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Front-End - Exercício Módulo 08</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="Favicon/favicon-32x32.png" type="images/x-icon">
+
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="css/formularios.css">
+
+	</head>
+		<body>
+
+		<header>
+			<div class="titulo">
+				<h2>Full Stack Java - Módulo Front-End</h2>
+			</div>
+			<div class="menu-suspenso" >
+				<button class="botao-menu">Aulas
+				</button>
+				<div class="menu-content" style="left:0;">
+					<a href="homepage.html">Página Inicial</a>
+					<a href="tabela.html">Tabelas</a>
+					<a href="formularios.html">Formulários</a>
+				</div>
+			</div>
+
+		</header>
+                <section class="secao">
+                    <div class="container">
+
+						<div class="div-chamada-form">
+							<h1> Preencha os campos abaixo</h1>
+						</div>
+
+                        <form method="post">
+                            <div id="superior">
+                                <label for="nome" class="label-inputs">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="inputs">
+                            </div>
+
+                            <div>
+								<label for="email" class="label-inputs">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="inputs">
+                            </div>
+
+                            <div>
+                                <label for="mensagens" class="label-inputs">Mensages</label>
+                                <textarea name="mensagens" id="mensagens" rows="5" placeholder="Digite aqui sua mensagem...." class="inputs"></textarea>
+                            </div>
+
+                            <div class="radio">
+								<!-- type="radio" Seleciona apenas uma opção -->
+								<p>Quail linguagem você prefere?</p>
+
+								<input type="radio" name="linguagens" value="html" id="html" class="inputs">
+								<label for="html">HTML</label>
+								<input type="radio" name="linguagens" value="css" id="css" class="inputs">
+								<label for="css">CSS</label>
+								<input type="radio" name="linguagens" value="javascript" id="javascript" class="inputs">
+								<label for="javascript">JavaScript</label>
+						</div>
+
+						<div class="checkbox">
+						 	 <!-- type="checkbox" Multipla escolha  -->
+								<p>Quais linguagens você sabe?</p>
+							<label for="html2">
+								<input type="checkbox" name="html2" id="html2" value="html" class="inputs"> HTML
+							</label>
+							<label for="css2">
+								<input type="checkbox" name="css2" id="css2" value="css" class="inputs"> CSS
+							</label>
+							<label for="javascript2">
+								<input type="checkbox" name="javascript2" id="javascript2" value="javascript" class="inputs"> JavaScript
+							</label>
+						</div>
+
+						<div class="cor"> <!-- Aqui cria um campo para selecionar opções
+						  -->
+							<p>Qual sua cor favorita?</p>
+							<label>
+								<select > <!-- o atributo selected ja deixa a opção marcada  -->
+									<option value="azul" selected>Azul</option>
+									<option value="preto">Preto</option>
+									<option value="branco">Branco</option>
+									<option value="todos" selected>Todas</option>
+								</select>
+							</label>
+
+						</div>
+
+						<div>
+							<input type="submit">
+						</div>
+
+					</form>
+
+				</div>
+			</section>
+
+			<footer>
+				<p>&copy; 2021 | Desenvolvido por <em>Vinícius Almeida.</em> </p>
+			</footer>
+
+		</body>
+</html>

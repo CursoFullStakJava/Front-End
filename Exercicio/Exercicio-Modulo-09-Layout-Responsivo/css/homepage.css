@@ -1,0 +1,260 @@
+/* Arquivo CSS com com estilo dos elementos da homepage */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #011C50;
+    overflow: hidden;
+}
+
+/* Style the header */
+header {
+    background-color: #011C50;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    display: inline-block;
+    margin-top: .1em;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+    color: deepskyblue;
+}
+
+.botao-menu {
+    background-color: transparent;
+    color: deepskyblue;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 191, 255, 1);
+    border-top: none;
+    border-left: none;
+    border-right: 1px solid rgba(0, 191, 255, 1);
+    box-shadow: 0 1px 0 0 rgba(0, 191, 255, 1);
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+}
+
+.menu-suspenso {
+    position: relative;
+    display: inline-block;
+    float: left;
+    left: 0;
+    flex-wrap: wrap;
+    margin-bottom: .7em;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .7);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: .6s;
+    top: 30px;
+    left: 20px;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 0 6px 0 rgba(217, 214, 214, 0.6);
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-suspenso:hover .menu-content {
+    display: block;
+}
+
+.menu-suspenso:hover .botao-menu {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/* Style the body */
+
+.secao {
+    background: #011C50;
+    display: flex;
+}
+
+.artigo {
+    display: flex;
+    max-width: 80%;
+    height: auto;
+    margin: 4em auto;
+    background: transparent;
+    border-radius: 0 70px 70px 0;
+    box-shadow: 5px 5px 5px 0 rgba(17, 174, 250, 0.6);
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.foto-perfil {
+  /*  border: 1px solid black; */
+    max-width: 226px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-right: 1.5em;
+}
+
+img {
+    width: 100%;
+    border-radius: 70px;
+    box-shadow: 5px 5px 5px 0 rgba(17, 174, 250, 0.6);
+}
+
+.descricao {
+    max-width: 65%;
+   /* border: 1px solid black; */
+    flex-wrap: wrap;
+
+}
+
+.descricao h2 {
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: deepskyblue;
+}
+
+.descricao p {
+    font-size: 1rem;
+    text-align: justify;
+    color: deepskyblue;
+    margin: 2em 0 0 0;
+}
+
+/* Style the footer */
+footer {
+    background-color: #011C50;
+    padding: 20px;
+    height: 60px;
+    width: 100%;
+    margin-top: 8em;
+    text-align: center;
+    color: white;
+}
+footer p {
+    text-align: center;
+    color: aqua;
+}
+
+/* Style Responsive */
+
+@media (max-width: 1024px) {
+    .descricao {
+        max-width: 65%;
+    }
+}
+
+@media (max-width: 945px) {
+    .descricao {
+        max-width: 65%;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 945px) {
+
+    body {
+        overflow: visible;
+    }
+
+    .artigo {
+        flex-wrap: wrap;
+    }
+
+    .foto-perfil {
+        max-width: 190px;
+        min-width: 100px;
+        max-height: 222px;
+    }
+
+    .descricao {
+        max-width: 60%;
+    }
+
+    .descricao h2 {
+        margin-top: .5em;
+    }
+    
+    .descricao p {
+        font-size: .9rem;
+    }
+
+}
+
+
+/* mobile */
+@media (max-width: 425px) {
+
+    body {
+        overflow: visible;
+    }
+
+    .secao {
+        height: 650px;
+    }
+
+    .titulo {
+        font-size: 1.4rem;
+        margin-top: 1em;
+    }
+    
+    .artigo {
+        flex-wrap: wrap;
+        display: flex;
+        margin-top: 2em;
+        min-height: 700px;
+        box-shadow: 0 0 9px 2px rgba(17, 174, 250, 0.6);
+        border-radius: 70px 70px 70px 70px;
+    }
+
+    .artigo p {
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+        margin: 2.5em auto 1rem auto;
+        max-width: 226px;
+        min-width: 100px;
+        max-height: 222px;
+        border-radius: 15px;
+    }
+
+    .foto-perfil:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(4px 4px 10px lightgray);
+        box-shadow: none;
+    }
+
+    .descricao {
+        max-width: 300px;
+        height: 364px;
+    }
+
+    .descricao h2 {
+        margin-top: 0;
+    }
+    
+    .descricao p {
+        margin-top: 1.5em;
+        font-size: 1rem;
+    }
+}
+

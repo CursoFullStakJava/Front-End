@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/formularios.css">
+	<link rel="shortcut icon" href="Favicon/favicon-32x32.png" type="images/x-icon">
+	<title>HTML - Formularios</title>
+</head>
+		<body>
+
+			<header>
+				<h2> Curso Front-end - HTML</h2>
+				<nav class="navegacao">
+					<ul>
+						<li> <a href="homepage.html">Home</a> </li>
+						<li> <a href="modulo-07-exercicio.html"> Tabelas</a></li>
+						<li> <a href="06-formularios.html"> Formulários</a></li>
+					</ul>
+				</nav>
+
+				<img id="logo-exercicio" src="/Logo-exercicio.png" alt="logo exercício">
+
+                </header>
+
+                <section>
+                    <article>
+
+                        <h1> Preencha os campos abaixo</h1>
+
+                        <form method="post">
+                            <div id="superior">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                            </div>
+
+                            <div><label for="email">E-mail</label>
+                                <input type="email" name="email" id="email"placeholder="Digite seu e-mail">
+                            </div>
+
+                            <div>
+                                <label for="mensagens">Mensages</label>
+                                <textarea name="mensagens" id="mensagens" rows="5" placeholder="Digite aqui sua mensagem...."></textarea>
+                            </div>
+
+                            <div>
+                                 <p>	<!-- type="radio" Seleciona apenas uma opção -->
+								<label>Quail linguagem você prefere?</label>
+								<input type="radio" name="linguagens" value="html"> HTML
+								<input type="radio" name="linguagens" value="css"> CSS
+								<input type="radio" name="linguagens" value="javascript"> JavaScript
+							</p>
+						</div>
+
+						<div>
+						 	<p> <!-- type="checkbox" Multipla escolha  -->
+								<label>Quais linguagens você sabe?</label>
+								<input type="checkbox" name="linguagens" value="html"> HTML
+								<input type="checkbox" name="linguagens" value="css"> CSS
+								<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+							</p>
+						</div>
+
+						<div> <!-- Aqui cria um campo para selecionar opções
+						  -->
+							<label>Qual sua cor favorita?</label>
+							<select> <!-- o atributo selected ja deixa a opção marcada  -->
+								<option value="azul" selected>Azul</option>
+								<option value="preto">Preto</option>
+								<option value="branco">Branco</option>
+								<option value="todos"selected>Todas</option>
+							</select>
+
+						</div>	
+
+						<div id="inferior">
+							<input type="submit">
+						</div>
+
+					</form>
+
+				</article>
+			</section>
+
+			<footer>
+				<p>&copy; 2021 | Desenvolvido por <em>Vinícius Almeida.</em> </p>
+			</footer>
+
+		</body>
+</html>

@@ -1,0 +1,181 @@
+/* Importando CSS de Tabelas*/
+@import url('tabelas.css');
+
+body {
+	font-family: sans-serif;
+	overflow: auto;
+	background-color: #011C50;
+}
+
+header {
+	background-color: #011C50;
+	padding: 20px;
+	text-align: center;
+	font-size: 20px;
+	flex-wrap: wrap;
+}
+
+.titulo {
+	display: inline-block;
+	margin-top: .1em;
+	font-size: 1.6rem;
+	flex-wrap: wrap;
+	color: deepskyblue;
+}
+
+.botao-menu {
+	background-color: transparent;
+	color: deepskyblue;
+	padding: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0, 191, 255, 1);
+	border-top: none;
+	border-left: none;
+	border-right: 1px solid rgba(0, 191, 255, 1);
+	box-shadow: 0 1px 0 0 rgba(0, 191, 255, 1);
+	cursor: pointer;
+	width: 90px;
+	height: 30px;
+}
+
+.menu-suspenso {
+	position: relative;
+	display: inline-block;
+	float: left;
+	left: 0;
+	flex-wrap: wrap;
+	margin-bottom: .7em;
+}
+
+.menu-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, .7);
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	z-index: 1;
+	transition: .6s;
+	top: 30px;
+	left: 20px;
+}
+
+.menu-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	box-shadow: 0 0 6px 0 rgba(217, 214, 214, 0.6);
+	filter: drop-shadow(2px 4px 6px black);
+}
+
+.menu-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.menu-suspenso:hover .menu-content {
+	display: block;
+}
+
+.menu-suspenso:hover .botao-menu {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.secao {
+	background: url('../images/pattern.png') center top repeat #dddddd;
+	width: 100vw;
+}
+
+.container {
+	padding: 30px 0 30px 0;
+}
+
+.container h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.7rem;
+	text-align: center;
+	color: #011C50;
+}
+
+footer {
+	font-family: 'Elite Especial', cursiva, serif;
+	background-color: #011C50;
+	height: 10px;
+	text-align: center;
+	color: aqua;
+	padding: 20px;
+}
+
+/* Responsive Style */
+
+/* Mobile */
+
+@media (max-width: 565px) {
+	
+	header {
+		height: 50px;
+	}
+
+	.botao-menu {
+		padding: 2px 8px;
+		font-size: .9rem;
+		border-bottom: 1px solid rgba(0, 191, 255, 1);
+		border-right: none;
+		box-shadow: 0 1px 0 0 rgba(0, 191, 255, 1);
+		width: 60px;
+		height: 30px;
+		position: center;
+	}
+
+	.titulo {
+		font-size: 1.4rem;
+	}
+
+	.container h3 {
+		font-size: 1.5rem;
+	}
+
+	footer {
+		font-size: .9rem;
+	}
+
+}
+
+@media (max-width: 415px) {
+
+	.titulo {
+		font-size: 1.3rem;
+	}
+}
+
+
+@media (max-width: 388px) {
+
+	.titulo {
+		font-size: 1.2rem;
+	}
+
+	.container {
+		padding: 10px 0 30px 0;
+	}
+
+	.container h3 {
+		font-size: 1.2rem;
+		margin-top: .8em;
+	}
+
+	footer {
+		font-size: .9rem;
+	}
+}
+
+@media (max-width: 362px) {
+
+	.titulo {
+		font-size: 1rem;
+	}
+
+	footer {
+		font-size: .8rem;
+	}
+}

@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the header */
+header {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #011C50;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 0px 0px rgba(1, 28, 80, 0.6);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #011C50;
+}
+
+#logo-exercicio {
+    display: block;
+    width: 14%;
+    position: absolute;
+    left: 22px;
+    top: -42px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+   /* border: 1px solid #011C50; */
+    position: absolute;
+    background: transparent;
+    padding: 5px;
+    top: 15px;
+    float: right;
+    left: 1000px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navegacao li {
+    border-right: 3px solid #011C50;
+    display: inline-block;
+    padding: 10px 10px 0px 10px;
+    line-height: 10px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #011C50;
+    font-weight: initial;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.navegacao a:hover {
+    color: mediumblue;
+    transition: opacity 1.5s;
+}
+
+article {
+    top: 20px;
+    position: relative;
+    padding: 80px  20px  20px  20px;
+    width: 100%;
+    background-color: white;
+}
+
+h1 {
+    position: absolute;
+    margin: -50px  0px  0px  515px;
+    color: #011C50;
+}
+
+[type="text"], [type="email"], textarea {
+    width: 100%;
+    display: block;
+}
+
+form {
+    margin: auto;
+    top: -10px;
+    width: 400px;
+    background-color: transparent;
+}
+
+form div {
+    border-right: 5px solid #011C50;
+    border-left: 5px solid #011C50;
+    margin: 0px 10px 0px 10px; /* Se declarar apenas 1 unidade, ela valerá para todos os lados */
+    padding: 20px 20px 20px 20px;
+    background-color: #ffffff;
+    position: relative;
+    top: -2px;
+}
+
+#superior {
+    border-top: 5px solid #011C50;
+}
+
+#inferior {
+    border-bottom: 5px solid #011C50;
+}
+
+label {
+    display: block;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #011C50;
+}
+
+input {
+    padding: 5px;
+}
+
+/* Clear floats after the columns */
+section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    margin-top: 20px;
+    background-color: #011C50;
+    padding: 10px;
+    text-align: center;
+    color: aqua;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article, header, footer, h1, image {
+        width: 100%;
+        height: auto;
+    }
+}

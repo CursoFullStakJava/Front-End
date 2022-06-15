@@ -1,0 +1,194 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+.botao-menu {
+	position: absolute;
+	background-color: transparent;
+	color: #ffffff;
+	padding: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(175, 173, 173, 0.4);
+	border-top: none;
+	border-left: none;
+	border-right: 1px solid rgba(175, 173, 173, 0.4);
+	box-shadow: 0px 1px 0px 0px rgba(175, 173, 173, 0.4);
+	cursor: pointer;
+	width: 90px;
+	height: 30px;
+}
+
+.menu-suspenso {
+	position: absolute;
+	display: inline-block;
+	top: 28px;
+	left: 20px;
+}
+
+.menu-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: rgba(255, 255, 255, .7);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 30px;
+	left: 20px;
+}
+
+.menu-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	box-shadow: 0px 0px 6px 0px rgba(217, 214, 214, 0.6);
+}
+
+.menu-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.menu-suspenso:hover .menu-content {
+	display: block;
+}
+
+.menu-suspenso:hover .botao-menu {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+header h2 {
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+a {
+	color: #555555;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+a:visited {
+	color: #f00;
+}
+
+
+a:hover {
+	color: #009;
+	background: #eee;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: italic bold 2.5rem/2 sans-serif;
+	text-align: center;
+}
+
+
+/* 
+
+	Cores
+
+*/
+
+article {
+	background: url('../images/pattern.png') center top repeat #dddddd;
+	width: 100%;
+	padding: 30px 0px 70px 0px;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+header, footer {
+	background-color: #011C50;
+}
+
+footer p {
+	color: #00FFFFFF;
+	font-size: 1.5rem;
+}
+
+footer {
+	position: relative;
+	padding: 20px;
+}
+
